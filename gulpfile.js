@@ -14,6 +14,7 @@ require('laravel-elixir-vue');
  */
 
 elixir(mix => {
+	mix.copy('node_modules/materialize-css/fonts/roboto', 'public/fonts/roboto/');
     mix.sass('app.scss')
        .webpack('app.js');
 });
