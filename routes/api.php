@@ -22,3 +22,5 @@ Route::resource('bill_pays', 'BillPaysController', [
 		'create', 'edit'
 	]
 ]);
+
+Route::post('token', ['as' => 'getToken', 'uses' => 'AuthenticateController@authenticate']);
